@@ -1,0 +1,25 @@
+{
+  "name": "mugunghwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mugunghwa.js",
+  "scripts": {
+    "lint": "eslint *.js sources/*.js --fix",
+    "build": "webpack --config webpack.config.js",
+    "test": "node ./node_modules/babel-cli/bin/babel-node.js ./build/nt.js"
+  },
+  "author": "",
+  "license": "LICENSE.md",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-dynamic-import-webpack": "^1.0.2",
+    "babel-preset-env": "^1.7.0",
+    "clone": "^2.1.2",
+    "infinite.js": "git+https://github.com/hmmhmmhm/infinite.js.git",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
